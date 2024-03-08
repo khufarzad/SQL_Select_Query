@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS Students;
+
 CREATE DATABASE Students;
 
 USE Students;
@@ -35,4 +37,42 @@ INSERT INTO Info VALUES
 	(21,'Sana','Saberi',19,68),
 	(22,'Sedigheh','Roustaei',43,17);
     
+    
+-- Select All Columns
 SELECT * FROM Info;
+
+-- Select a Specific Column
+SELECT STU_No FROM Info;
+
+-- Select Specific Columns
+SELECT STU_No, Last_Name, Age FROM Info;
+
+-- WHERE 
+SELECT * FROM INFO
+WHERE Score >= 70;
+
+SELECT STU_No, Last_Name, Score FROM Info
+WHERE Score < 30;
+
+-- >
+-- <
+-- >=
+-- <=
+-- =
+-- !=
+
+SELECT * FROM Info
+WHERE Score = 100;
+
+SELECT Last_Name, Age FROM Info
+WHERE Score != 100;
+
+-- Order Selections
+-- ORDER BY Column_Name ASC/DESC
+-- ASC Is Default
+
+SELECT * FROM Info
+ORDER BY Age;
+
+SELECT * FROM Info
+ORDER BY Score DESC;
