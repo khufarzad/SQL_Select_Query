@@ -81,3 +81,12 @@ ORDER BY Score DESC;
 SELECT STU_No ,First_Name, Last_Name, Age FROM Info
 WHERE Age > 35
 ORDER BY Age ASC;
+
+-- Selection Operator
+SELECT First_Name, Last_Name, Score, Score*10 
+FROM Info;
+
+SELECT First_Name,
+		Last_Name,
+        Score*10 AS Final_Score
+FROM Info;
