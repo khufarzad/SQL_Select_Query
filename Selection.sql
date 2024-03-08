@@ -90,3 +90,29 @@ SELECT First_Name,
 		Last_Name,
         Score*10 AS Final_Score
 FROM Info;
+
+SELECT First_Name,
+		Last_Name,
+        Score*10 AS Final_Score,
+        Score/5 AS University_Score
+FROM Info;
+
+
+
+CREATE DATABASE Shop;
+USE Shop;
+CREATE TABLE Products(
+	Pro_No INT, 
+    Unit_Price INT
+);
+INSERT INTO Products VALUES
+	(1, 1000),
+    (2, 1250),
+    (3, 850),
+    (4, 3800);
+SELECT * FROM Products;
+SELECT Pro_No,
+		Unit_Price,
+        Unit_Price*0.05 AS Discount,
+        ROUND(Unit_Price-(Unit_Price*0.05), 1) AS Net_Price
+FROM Products;
