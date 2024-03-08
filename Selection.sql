@@ -132,3 +132,8 @@ WHERE Score = 100 OR Score = 97 OR Score = 85;
 
 SELECT * FROM Info
 WHERE First_Name IN ('Zahra', 'Marziye');
+-- Where First_Name = 'Zahra' OR First_Name = 'Marziye'
+
+SELECT * FROM Info
+WHERE Score BETWEEN 70 AND 90;
+-- WHERE Score >= 70 AND Score <= 90;
