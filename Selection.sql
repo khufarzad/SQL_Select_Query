@@ -73,6 +73,11 @@ WHERE Score != 100;
 
 SELECT * FROM Info
 ORDER BY Age;
+-- ORDER BY Age ASC;
 
 SELECT * FROM Info
 ORDER BY Score DESC;
+
+SELECT STU_No ,First_Name, Last_Name, Age FROM Info
+WHERE Age > 35
+ORDER BY Age ASC;
