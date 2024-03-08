@@ -162,3 +162,9 @@ INSERT INTO Info(STU_No, First_Name, Last_Name) VALUES
     
 INSERT INTO Info VALUES
 	(24, 'Behnaz', 'Sadegh', NULL, NULL);
+    
+SELECT * From Info
+WHERE Age IS NULL;
+
+SELECT * From Info
+WHERE Age IS NOT NULL;
