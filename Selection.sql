@@ -116,3 +116,14 @@ SELECT Pro_No,
         Unit_Price*0.05 AS Discount,
         ROUND(Unit_Price-(Unit_Price*0.05), 1) AS Net_Price
 FROM Products;
+
+
+-- AND & OR
+SELECT * FROM Info;
+
+SELECT * FROM Info
+WHERE Score > 8 AND Score < 30 AND Age > 21;
+
+SELECT * FROM Info
+WHERE Age <= 20 OR Score >= 90;
+
