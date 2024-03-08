@@ -137,3 +137,28 @@ WHERE First_Name IN ('Zahra', 'Marziye');
 SELECT * FROM Info
 WHERE Score BETWEEN 70 AND 90;
 -- WHERE Score >= 70 AND Score <= 90;
+
+
+SELECT * FROM Info
+WHERE Last_Name LIKE '%i';
+
+SELECT * FROM Info
+WHERE Last_Name LIKE '%ri';
+
+SELECT * FROM Info
+WHERE Last_Name LIKE 'J%';
+
+SELECT * FROM Info
+WHERE Last_Name LIKE 'S%i';
+
+SELECT * FROM Info
+WHERE Last_Name LIKE 'H____';
+
+SELECT * FROM Info
+WHERE Last_Name LIKE 'H___i';
+
+INSERT INTO Info(STU_No, First_Name, Last_Name) VALUES
+	(23, 'Shayesteh', 'Fatemi');
+    
+INSERT INTO Info VALUES
+	(24, 'Behnaz', 'Sadegh', NULL, NULL);
